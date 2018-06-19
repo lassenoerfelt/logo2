@@ -1,0 +1,1472 @@
+/*---GLOBAL---*/
+
+* {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding 0;
+    line-height: 1.6;
+}
+
+html, body {
+    background: #262525;
+    width: 100%; 
+    height:100%; 
+}
+
+.hvid {
+    color: #c0c0c0;
+}
+
+.gul {
+    color: #ab8b63;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.overskrift {
+    font-size: 180%;
+    margin-bottom: 0%;
+}
+
+.underoverskrift {
+    font-size: 140%;
+    margin-bottom: auto;
+}
+
+.est {
+    font-size: 80%;
+    margin-top: 0%;
+    margin-bottom: 6%;
+}
+
+.skaeg {
+    width: 50%;
+}
+
+.tekst {
+font-size: 100%;
+
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+
+/*---------HEADER---------*/
+
+/* Baggrund og Logo */
+
+.headerburger {
+    background-image: url(../images/forsidebillede.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0; 
+}
+
+#headlogo1{
+    width: 25%;
+    position: absolute;
+    left: 37%;
+    top: 10px;
+}
+
+/* BURGER - NAV */
+
+.nav{
+    text-align: right;
+    height: 300px;
+    line-height: 300px;
+}
+
+.menu{
+    margin: 0 30px 0 0;
+    text-align: center;
+    width: 100%;
+    display: none;
+    
+}
+
+.menu a{
+    text-decoration: none;
+    color: grey;
+    margin: 0;
+    line-height: 100px;
+    display: block;
+    clear: right;
+    height: 100px; 
+    position: relative;
+    top: 220px;
+    color: #C0c0c0;
+    background-color: #262525;
+    border-bottom: 2px solid #494a4c;
+    font-size: 22px;
+}
+
+label{
+    margin: 10px 30px 0 0;
+    font-size: 40px;
+    line-height: 70px;
+    display: block;
+    width: 30px;
+    float: right;
+    color: #C0C0C0;
+}
+
+#toggle{
+    display: none;
+}
+
+#toggle:checked + .menu{
+    display: block;
+}
+
+.nav2{
+    display: none;
+}
+
+/*----INDEX----*/
+
+body, html{
+    height: 100%;
+    margin: 0;
+}
+
+#startside{
+    background-image: url(../images/forsidebillede.png);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#startsidecontainer{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.startsideitem{
+    margin-top: 30%; 
+    width: 100%;
+    height: 30%;
+}
+
+#startsideknap{
+    height: 30px;
+    animation: bounce .8s infinite alternate;
+}
+
+@keyframes bounce {
+  to { transform: scale(1.5); }
+}
+
+#startsidelogo{
+    width: 85%;
+    height: auto;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+
+
+
+/*-----SLIDER----*/
+
+.vurderingstekst{
+    z-index: 100;
+    font-size: 50%;
+    text-align: center;
+    color: #c0c0c0;
+    padding-top: 0px;
+    margin: 0;
+}
+
+.slide{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #262525;
+    height: 250px;
+    width: 100%;
+}
+
+.flexslider1{
+    width: auto;
+    margin: 4% auto 0;
+    height: 25%;
+}
+
+.flexslider2{
+    width: 100%;
+    height: 20%;
+    padding: 2% 10%;
+    font-size: 60%;
+    line-height: 1.6;
+}
+
+.flexslider3{
+    width: auto;
+    margin: 0 auto 0 auto;
+    height: 7%;
+    padding: 0 0  6% 0;
+}
+
+.slidetablet{
+    display: none;
+}
+
+.slidedesktop{
+    display: none;
+}
+
+        /* Mod højre */
+
+.slider{
+    overflow: hidden;
+    height: 250px;
+}
+
+.slider figure #slidercontainer section{
+    width: 20%;
+    float: left;
+}
+
+.slider figure .imgbag{
+    width: 100%;
+    float: left;
+}
+
+.slider figure{
+    position:relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 25s slidy infinite;
+}
+
+@keyframes slidy{
+    0%{
+        left: 0%;
+    }
+    
+    20%{
+        left: 0%;
+    }
+    
+    22%{
+        left: -100%;
+    }
+    
+    42%{
+        left: -100%;
+    }
+    
+    44%{
+        left: -200%;
+    }
+    
+    64%{
+        left: -200%;
+    }
+    
+    66%{
+        left: -300%;
+    }
+    
+    86%{
+        left: -300%;
+    }
+    
+    88%{
+        left: -400%;
+    }
+    
+    100%{
+        left: -400%;
+    }
+}
+
+        /* Mod venstre */
+
+.slider2{
+    overflow: hidden;
+    height: 250px;
+}
+
+.slider2 #figure2 #slidercontainer2 section{
+    width: 20%;
+    float: left;
+}
+
+.slider2 #figure2 .imgbag{
+    width: 100%;
+    float: left;
+}
+
+.slider2 #figure2{
+    position:relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 25s slidy2 infinite;
+}
+
+@keyframes slidy2{
+    0%{
+        left: -400%;
+    }
+    
+    20%{
+        left: -400%;
+    }
+    
+    22%{
+        left: -300%;
+    }
+    
+    42%{
+        left: -300%;
+    }
+    
+    44%{
+        left: -200%;
+    }
+    
+    64%{
+        left: -200%;
+    }
+    
+    66%{
+        left: -100%;
+    }
+    
+    86%{
+        left: -100%;
+    }
+    
+    88%{
+        left: 0%;
+    }
+    
+    100%{
+        left: 0%;
+    }
+}
+
+
+/*---GRIDFORSIDE---*/
+
+.item1 {
+    grid-area: header;
+}
+
+.item3 {
+    grid-area: skaeg;
+}
+
+.item4 {
+    grid-area: historie;
+}
+
+.item5 {
+    grid-area: maend;
+}
+
+.item6 {
+    grid-area: profil1;
+     
+}
+
+.item8 {
+    grid-area: profil2;
+    
+}
+
+.item10 {
+    grid-area:profil3;
+    display:none;
+    border-bottom: 1.5px solid #212121;
+}
+
+
+.itemfooter {
+    grid-area:footer;
+}
+
+.itemslider {
+    grid-area: slider;
+}
+
+.grid-container {
+    display: grid;
+    width: 100%;
+    grid-template-areas: 'header' 'skaeg' 'historie' 'maend' 'profil1' 'profil2' 'footer';
+    grid-gap: 10px;
+}
+
+.grid-container > div {
+
+    text-align: center;
+    padding: 0px 0;
+}
+
+/*---GRIDFORSIDESLUT---*/
+
+
+.item5 h1{
+     margin-top: 5%;   
+}
+
+.itemslider {
+    grid-area: slider;
+    display: none;
+}
+
+#tekstcontainer {
+    margin-left:4%;
+    margin-right:4%; 
+    margin-bottom:8%;
+}
+
+
+/*----PRISER-----*/
+
+.item11 {
+    grid-area: header;
+}
+
+.item12 {
+    grid-area: menu;
+}
+
+.item13 {
+    grid-area: overskrift;
+}
+
+.item14 {
+    grid-area: ikon1;
+}
+
+.item15 {
+    grid-area: tekst1;
+}
+
+.item16 {
+    grid-area: ikon2;
+}
+
+.item17 {
+    grid-area: tekst2;
+}
+
+.item18 {
+    grid-area: ikon3;
+}
+
+.item19 {
+    grid-area: tekst3;
+}
+
+.item20 {
+    grid-area: ikon4;
+}
+
+.item21 {
+    grid-area: tekst4;
+}
+
+.item22 {
+    grid-area: ikon5;
+}
+
+.item23 {
+    grid-area: tekst5;
+}
+
+.item24 {
+    grid-area: ikon6;
+}
+
+.item25 {
+    grid-area: tekst6;
+}
+
+.itemfooter {
+    grid-area: footer;
+}
+
+
+.grid-container-priser {
+    display: grid;
+    grid-template-areas: 'header header header' 'overskrift overskrift overskrift' 'ikon1 tekst1 .' '. tekst2 ikon2' 'ikon3 tekst3 .' '. tekst4 ikon4' 'ikon5 tekst5 .' '. tekst6 ikon6' 'footer footer footer';
+    grid-gap: 10px;
+    background-color: #262525;
+}
+
+.grid-container-priser > .gap {
+    background-color: #262525;
+    text-align: center;
+    padding: 20px 0px;
+
+}
+
+
+/*----ARRANGEMENTER-----*/
+
+.item27 {
+    grid-area: header;
+}
+
+.item28 {
+    grid-area: menu;
+}
+
+.item29 {
+    grid-area: overskrift;
+}
+
+.item30 {
+    grid-area: ikon1;
+}
+
+.item31 {
+    grid-area: tekst1;
+}
+
+.item32 {
+    grid-area: ikon2;
+}
+
+.item33 {
+    grid-area: tekst2;
+}
+
+.item34 {
+    grid-area: ikon3;
+}
+
+.item35 {
+    grid-area: tekst3;
+}
+
+.item36 {
+    grid-area: ikon4;
+}
+
+.item37 {
+    grid-area: tekst4;
+}
+
+.itemfooter {
+    grid-area: footer;
+}
+
+
+
+.grid-container-arrangementer {
+    display: grid;
+    grid-template-areas: 'header header header' 'overskrift overskrift overskrift' 'ikon1 tekst1 .' '. tekst2 ikon2' 'ikon3 tekst3 .' '. tekst4 ikon4' 'footer footer footer'
+}
+
+.grid-container-arrangementer > .gap {
+    background-color: #262525;
+    text-align: center;
+}
+
+.grid-container-arrangementer > .item31, .item33, .item35, .item37 {
+    margin: 15% 10%
+}
+
+.grid-container-arrangementer > .item29{
+    margin: 5% 10% 10% 
+    
+}
+
+/*----OM OS-----*/
+
+.item70 {
+    grid-area: header;
+}
+
+.item71 {
+    grid-area: overskrift;
+}
+
+.item72 {
+    grid-area: ikon1;
+}
+
+.item73 {
+    grid-area: tekst1;
+}
+
+.item74 {
+    grid-area: ikon2;
+}
+
+.item75 {
+    grid-area: tekst2;
+}
+
+.itemfooter {
+    grid-area: footer;
+}
+
+.item77 {
+    grid-area: credit;
+}
+
+
+.grid-container-om-os {
+    display: grid;
+    grid-template-areas: 'header' 'overskrift' 'ikon1' 'tekst1' 'ikon2' 'tekst2' 'credit' 'footer';
+}
+
+.grid-container-om-os > .gap {
+    background-color: #262525;
+    text-align: center;
+    padding: 20px 20px;
+
+
+}
+
+.center {
+    text-align: center;
+}
+
+.left-om-os {
+    text-align: left;
+    margin: 0 10%;
+}
+
+.center-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*------CREDIT--------*/
+
+li a{
+    text-decoration: none; 
+    color: #c0c0c0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#credit {
+    text-decoration: none; 
+    color: #c0c0c0;
+}
+
+.credit-container {
+    margin: 10%;
+}
+
+.imprint {
+     text-decoration: none; 
+    color: #c0c0c0;
+}
+
+.item77 {
+    padding-top: 10%;
+    text-align: center;
+    font-size: 80%;
+}
+
+
+
+/*---KONTAKT---*/
+
+.item40 { grid-area: header;}
+.item41 { grid-area: kontakt; }
+.item42 { grid-area: telefon; }
+.item43 { grid-area: tekst; }
+.item44 { grid-area: åbningstider; }
+.item45 { grid-area: ur; }
+.item46 { grid-area: tekståbningstider; }
+.item47 { grid-area: tekstekstra; }
+.item48 { grid-area: find-os; }
+.item49 { grid-area: lokation; }
+.item50 { grid-area: map; }
+.item51 { grid-area: mapp; }
+.item52 { grid-area: mappp; }
+.item53 { grid-area: footer; }
+
+.grid-container-kontakt {
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'kontakt kontakt'
+    'telefon tekst'
+    'åbningstider åbningstider'
+    'ur tekståbningstider'
+    'tekstekstra tekstekstra'
+    'find-os find-os'
+    'lokation lokation '
+    'map map'
+    'footer footer';
+  grid-gap: 10px;
+}
+
+.grid-container-kontakt > div {
+  text-align: center;
+  padding: 0px 0;
+}
+
+
+/*---KONTAKTSTYLING---*/
+
+.ikon {
+    width:70px;; 
+    float:right;
+}
+
+.ikon2{
+    width: 70px;
+    float: left;
+}
+
+.kontakttekst {
+    text-align: left; 
+}
+
+.lokationikon {
+    width:50px;
+}
+
+.lukkede {
+    font-size:90%;
+    margin-bottom: 7%;
+}
+
+.space {
+    margin-bottom: 5%; 
+    margin-top: 4%;
+}
+
+.ikonspace {
+    margin-bottom: 35%; 
+
+}
+
+.lokationspace {
+    margin-bottom: 5%;
+}
+
+.item51 {
+    display: none; 
+}
+
+.item52 {
+    display: none;
+}
+
+.item50 {
+    display: block;
+}
+
+/*---FOOTER---*/
+
+footer {
+   position: relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #262525;
+   color: #c0c0c0;
+   text-align: center;
+}
+
+#containerfooter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 0; 
+    margin-bottom: 5%;
+}
+
+.footerflex {
+    margin: 10px 30px;
+    color: #c0C0C0;
+    width: 100%;
+    font-size: 80%;
+}
+
+#facebookikon {
+    width:40%;
+    height:auto;
+    margin-bottom: 5%;
+}
+/*-----------TABLET PORTRÆT------------*/
+@media only screen and (min-width:600px) {
+    
+.grid-container {
+    display: grid;
+    width: 100%;
+    grid-template-areas: 'header header' 'skaeg skaeg' 'historie historie' 'maend maend' 'profil1 profil1' 'profil2 profil2' 'footer footer';
+    grid-gap: 10px;
+    
+}
+    
+.item5 h1{
+        font-size: 145%;
+        margin-top: 2%;
+    }
+    
+.skaeg {
+        width:40%; 
+    }
+    
+.tekstforside {
+        width:80%;
+        display: block;
+        margin-left:auto;
+        margin-right: auto;
+         
+    }
+
+/*---SLIDER---*/
+
+.slidedesktop{
+    display: none;
+}
+
+.slider2{
+        display: none;
+    }
+    
+.slidetablet{
+        display:flex;
+    }
+    
+.slider{
+    overflow: hidden;
+    height: 250px;
+}
+
+.slider figure #slidercontainer section{
+    width: 10%;
+    float: left;
+}
+
+.slider figure{
+    animation: 20s slidy infinite;
+}
+
+@keyframes slidy{
+    0%{
+        left: 0%;
+    }
+    
+    15%{
+        left: 0%;
+    }
+    
+    20%{
+        left: -50%;
+    }
+    
+    35%{
+        left: -50%;
+    }
+    
+    40%{
+        left: -100%;
+    }
+    
+    55%{
+        left: -100%;
+    }
+    
+    60%{
+        left: -150%;
+    }
+    
+    75%{
+        left: -150%;
+    }
+    
+    80%{
+        left: -200%;
+    }
+    
+    100%{
+        left: -200%;
+    }
+    
+}
+    
+    
+/*----INDEX---*/
+    
+.startsideitem{
+    margin-top: 5%; 
+    width: 100%;
+    height: 30%;
+}
+
+#startsideknap{
+    height: 30px;
+    animation: bounce .8s infinite alternate;
+}
+
+@keyframes bounce {
+  to { transform: scale(1.5); }
+}
+
+#startsidelogo{
+    width: 40%;
+    height: auto;
+    margin-bottom: 10%;
+    padding-bottom: 0;
+}
+    
+#facebookikon {
+    width:100%;
+    height: 100%;
+    margin-top:4%;
+  
+}
+    
+.footerflex {
+        width:25%;
+    }
+    
+    .skaeg {
+        margin-bottom: 3%;
+    }
+    
+    .mandesladder {
+        margin-top: 3%;
+    }
+    
+/*----PRISER-----*/
+    
+    .grid-container-priser {
+        display: grid;
+        grid-template-areas: 'header header header header' 'overskrift overskrift overskrift overskrift' 'ikon1 tekst1 ikon2 tekst2' 'ikon3 tekst3 ikon4 tekst4' 'ikon5 tekst5 ikon6 tekst6' 'footer footer footer footer';
+        grid-gap: 10px;
+        background-color: #262525;
+    }
+
+
+
+
+     
+/*----KONTAKTTABLET---*/
+
+.grid-container-kontakt {
+  display: grid;
+  grid-template-areas:
+    'header header header header'
+    'kontakt kontakt åbningstider åbningstider'
+    'telefon tekst ur tekståbningstider'
+    'tekstekstra tekstekstra tekstekstra tekstekstra'
+    'find-os find-os find-os find-os'
+    'lokation lokation lokation lokation' 
+    'mapp mapp mapp mapp'
+    'footer footer footer footer';
+  grid-gap: 10px;
+}
+    
+.grid-container-kontakt > div {
+  text-align: center;
+  padding: 0px 0;
+}
+       
+.lukkede {
+        font-size: 105%;
+        margin-bottom: 7%;
+    }
+    
+.item50 {
+        display: none; 
+    }
+    
+.item52 {
+        display: none;
+    }
+    
+.item51 {
+        display: block; 
+    }
+    
+.footerflex {
+    width: 18%;    
+    }  
+    
+#containerfooter {
+    margin-bottom: 2%;
+    align-items: center;
+}
+    
+#facebookikon {
+    width:40%;
+}
+
+.kontakttekst {
+    font-size: 80%;
+}
+
+.ikon2{
+    float: right;
+}
+    
+}
+
+/*-----------TABLET LANDSCAPE------------*/
+
+@media only screen and (min-width:768px) {
+    
+/* ----------HEADER-------------- */
+    
+/* Baggrund og Logo */
+
+#headlogo1{
+    display: none;
+}
+
+#headlogo2{
+    width: 150px;
+    margin-top: 5%;
+
+}
+
+/* FLEX */
+  
+#containerhead{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+/* NAVIGATION STYLING */
+    
+.nav{
+        display: none;
+}
+    
+.nav2{
+        display: contents;
+}
+
+.menu2{
+    margin: 0;
+    background-image: url(../images/forsidebillede.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 250px;
+    
+}
+
+.menu2 a{
+    text-decoration: none;
+    width: 20%;
+    text-align: center;
+    margin: 0 10px;
+    padding: 0 10px;
+    line-height: 70px;
+    font-size: 25px;
+    color:#c0c0c0;
+    position: relative;
+    
+}
+
+.menu2 .hoverhead:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #c0c0c0;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+    
+.menu2 .hoverhead:hover:before{
+  visibility: visible;
+  transform: scaleX(0.9);
+}
+
+label{
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+}
+
+#toggle2{
+    display: none;
+}
+
+    
+.containerfooter{
+        height:10%;
+        
+    }
+    
+
+
+    /*----PRISER-----*/
+    .grid-container-priser {
+        display: grid;
+        grid-template-areas: 'header header header header header header' 'overskrift overskrift overskrift overskrift overskrift overskrift' 'ikon1 tekst1 ikon2 tekst2 ikon3 tekst3' 'ikon4 tekst4 ikon5 tekst5 ikon6 tekst6' 'footer footer footer footer footer footer'
+    }
+
+    .space-right {
+        margin-right: 40%;
+    }
+
+    .space-left {
+        margin-left: 40%;
+    }
+    .footerpris {
+        position: absolute;
+    }
+
+    
+    /*----ARRANGEMENTER-----*/
+    .grid-container-arrangementer {
+        display: grid;
+        grid-template-areas: 'header header header header header' 'overskrift overskrift overskrift overskrift overskrift' 'ikon1 tekst1 . ikon2 tekst2' 'ikon3 tekst3 . ikon4 tekst4' 'footer footer footer footer footer'
+    }
+
+    .grid-container-arrangementer > .gap {
+        background-color: #262525;
+        text-align: center;
+        text-align: left;
+        margin-left: 10%;
+
+
+    }
+
+    .arrangementer-left {
+        margin-left: 30px;
+    }
+
+     .item33, .item37 {
+        margin-right: 30px;
+    }
+
+    /*------- OM OS -------*/
+    .grid-container-om-os {
+
+        display: grid;
+        grid-template-areas: 'header header' 'overskrift overskrift' 'ikon1 tekst1' 'ikon2 tekst2' 'credit credit' 'footer footer'
+    }
+
+    .ikon-om-os {
+        margin-left: 20px;
+        margin-right: 0px;
+        width: 100px;
+        display: flex;
+    }
+    
+    .center {
+        text-align: center;
+    }
+
+    .left-om-os {
+        text-align: left;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin: 0 10% 0 5%;
+    }
+}
+       
+/*-------------LAPTOP------------*/
+    
+@media only screen and (min-width:992px) {
+    
+/*----- FORSIDE -----*/
+
+.container-grid {
+    display:none;
+}
+    
+.grid-container > div {
+    text-align: center;
+    padding: 0px 0;
+}
+
+#tekstcontainer{
+        margin: 0 15% 5% 15%;
+        font-size: 120%
+    }
+
+.est{
+        margin: 0 0 2% 0;
+    }
+    
+.skaeg{
+        width: 25%;
+    }
+    
+#skaegcontainer {
+    width: 100%;
+    float: left;
+    padding: 0;
+    margin: 2% 0;
+    display: inline;
+} 
+
+   
+
+
+/*----- SLIDER -----*/
+    
+.slider2{
+        display: none;
+    }
+    
+    
+.slidedesktop{
+        display:flex;
+    }    
+    
+.slider{
+    overflow: hidden;
+    height: 250px;
+}
+
+.slider figure #slidercontainer section{
+    width: 6.667%;
+    float: left;
+}
+
+.slider figure{
+    animation: 15s slidy infinite;
+}
+
+@keyframes slidy{
+    0%{
+        left: 0%;
+    }
+    
+    15%{
+        left: 0%;
+    }
+    
+    30%{
+        left: 0%;
+    }
+    
+    33.33%{
+        left: -33.33%;
+    }
+    
+    48.33%{
+        left: -33.33%;
+    }
+    
+    63.33%{
+        left: -33.33%;
+    }
+    
+    66.66%{
+        left: -66.66%;
+    }
+    
+    81.66%{
+        left: -66.66%;
+    }
+    
+    100%{
+        left: -66.66%;
+    }
+    
+   
+}
+    
+    
+
+/*----- INDEX -----*/
+    
+.startsideitem{
+    margin-top: 5%; 
+    width: 100%;
+    height: 30%;
+}
+
+#startsideknap{
+    height: 30px;
+    animation: bounce .8s infinite alternate;
+}
+
+@keyframes bounce {
+  to { transform: scale(1.5); }
+}
+
+#startsidelogo{
+    width: 45%;
+    height: auto;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+    
+/*-------- PRISER --------*/
+    
+    .space-right {
+        margin-right: 60%;
+    }
+    
+    
+    /*--------ARRANGEMENTER-------*/
+    
+    
+
+    .grid-container-arrangementer {
+        display: grid;
+        grid-template-columns: 9% 24.33% 9% 24.33% 9% 24.33%;  
+        grid-template-areas: 'header header header header header header' 'overskrift overskrift overskrift overskrift overskrift overskrift' 'ikon1 tekst1 ikon2 tekst2 ikon3 tekst3' '. . ikon4 tekst4 . .' 'footer footer footer footer footer footer' }
+   
+
+    .arrangementer-left {
+        margin: 0;
+    }
+    
+    
+    
+    
+    
+      .grid-container-arrangementer > .item29 {
+        margin: 70px 250px;
+    }
+    
+      .grid-container-arrangementer > .gap > .item31, .item35 {
+        margin-bottom: 70px;
+    }
+    
+    .bottom-space {
+        margin-bottom: 50px;
+    }
+    
+          .grid-container-arrangementer > .item31 > .hvid {
+        width: 250px;
+    }
+    
+            .grid-container-arrangementer > .item33 > .hvid {
+        width: 250px;
+    }
+    
+           .grid-container-arrangementer > .item35 > .hvid {
+        width: 250px;
+    }
+    
+    
+         .grid-container-arrangementer > .item37 > .hvid {
+        width: 250px;
+    }
+    
+    .champagne {
+        margin-left: 50px;
+    }
+/*------- OM OS -------*/
+    
+    .grid-container-om-os {
+
+        display: grid;
+        grid-template-areas: 'header header header' 'overskrift overskrift overskrift' '. ikon1 tekst1' '. ikon2 tekst2' 'credit credit credit' 'footer footer footer'
+    }
+
+    .ikon-om-os {
+        margin-left: 43px;
+        margin-right: 0px;
+        width: 100px;
+        display: flex;
+
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .left-om-os {
+        text-align: left;
+        margin-right: 20%;;
+        margin-left: 80px
+    }
+    
+
+
+/*-----KONTAKTDESKTOP-----*/
+.grid-container-kontakt {
+  display: grid;
+  grid-template-areas:
+    'header header header header'
+    'kontakt kontakt åbningstider åbningstider'
+    'telefon tekst ur tekståbningstider'
+    'tekstekstra tekstekstra tekstekstra tekstekstra'
+    'find-os find-os find-os find-os' 
+    'lokation lokation lokation lokation' 
+    'mappp mappp mappp mappp'
+    'footer footer footer footer';
+    
+    
+  grid-gap: 10px;
+}
+    
+.grid-container-kontakt > div {
+  text-align: center;
+  padding: 0px 0;
+}
+
+    
+.item50 {
+        display: none; 
+    
+    }
+    
+.item51 {
+        display: none; 
+    }
+    
+.item52 {
+        display: block;
+    }
+    
+.lokationikon {
+    width:50px;
+}
+
+.lukkede {
+    font-size:110%;
+    margin-bottom: 2%; 
+    margin-top: 2%;
+  
+}
+    
+.kontakttekst {
+    font-size: 100%;
+    }
+
+.space {
+    margin-bottom: 4%; 
+}
+
+.ikonspace {
+    margin-bottom: 10%; 
+}
+
+.lokationspace {
+    margin-bottom: 1%;
+}
+    
+.footerflex {
+        width: 23%;
+    
+}  
+ 
+
+} 
